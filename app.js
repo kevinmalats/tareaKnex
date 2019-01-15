@@ -6,7 +6,7 @@ var logger = require('morgan');
 var hbs = require('hbs');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+const port = process.env.PORT || 3000
 var app = express();
 const knex= require('./db/knex');
 // view engine setup
